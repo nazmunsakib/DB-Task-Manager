@@ -15,7 +15,7 @@ if(!$conaction){
             if($task && $date){
                 $insert_query = "INSERT INTO ".DB_TABLE."(task, date) VALUES('{$task}', '{$date}')";
                mysqli_query($conaction, $insert_query);
-               header('location: index.php?added=true');
+               header("location: index.php?added=true");
             }
             
         }
